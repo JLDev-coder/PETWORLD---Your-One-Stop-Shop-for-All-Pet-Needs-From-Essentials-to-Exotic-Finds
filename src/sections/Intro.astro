@@ -1,0 +1,130 @@
+<div class="container">
+  <div class="content">
+    <div class="text">
+      <h1 class="title">Pet Store <br />& Beyond</h1>
+      <p class="description">
+        Your One-Stop Shop for All Pet Needs, From<br /> Essentials to Exotic Finds
+      </p>
+      <button>Get Started</button>
+    </div>
+    <img src="/public/Image.png" alt="" />
+  </div>
+</div>
+
+<div class="mob-container">
+  <div class="mob-content">
+    <h1 class="mob-title">Pet Store & Beyond</h1>
+    <p class="mob-description">
+      Your One-Stop Shop for All Pet<br /> Needs, From Essentials to Exotic<br
+      /> Finds
+    </p>
+    <button class="mob-button">Get Started</button>
+    <img
+      src="/public/Image.png"
+      alt="dog-image"
+      class="mob-image"
+      width="324"
+      height="294.4"
+    />
+  </div>
+</div>
+
+<style>
+  @media (min-width: 1024px) {
+    .mob-container {
+      display: none;
+    }
+    .title {
+      font-family: "Poppins-SemiBold";
+      font-size: 80px;
+    }
+
+    .container {
+      background-color: #f7f5fd;
+    }
+
+    .content {
+      padding-left: 100px;
+      padding-right: 100px;
+      display: flex;
+      padding-top: 70px;
+    }
+
+    img {
+      margin-left: auto;
+      padding-bottom: 70px;
+    }
+
+    .description {
+      font-family: "Poppins-Regular";
+      font-size: 18px;
+      color: #2d2d2d;
+      margin-top: 30px;
+      opacity: 50%;
+    }
+
+    button {
+      font-size: 18px;
+      font-family: "Poppins-Regular";
+      color: #2d2d2d;
+      border: none;
+      border-radius: 10px;
+      background-color: #f8d57e;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      padding-left: 50px;
+      padding-right: 50px;
+      cursor: pointer;
+      margin-top: 50px;
+    }
+  }
+
+  @media (max-width: 1020px) {
+    .container {
+      display: none;
+    }
+
+    .mob-container {
+      background-color: #f7f5fd;
+      display: block;
+    }
+
+    .mob-content {
+      padding-top: 80px;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-family: "Poppins-SemiBold";
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .mob-description {
+      font-family: "Poppins-Regular";
+      font-size: 18px;
+      color: #2d2d2d;
+      margin-top: 30px;
+      opacity: 50%;
+    }
+
+    .mob-button {
+      font-size: 18px;
+      font-family: "Poppins-Regular";
+      color: #2d2d2d;
+      border: none;
+      border-radius: 10px;
+      background-color: #f8d57e;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      padding-left: 50px;
+      padding-right: 50px;
+      cursor: pointer;
+      margin-top: 80px;
+    }
+
+    .mob-image {
+      margin-top: 60px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+</style>

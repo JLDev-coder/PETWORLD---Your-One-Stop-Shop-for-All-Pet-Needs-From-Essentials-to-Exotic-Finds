@@ -1,0 +1,114 @@
+<header>
+  <img src="/public/logo.svg" alt="Logo de PETWORLD" />
+  <h1 class="title">PETWORLD</h1>
+  <nav>
+    <ul>
+      <li><a href="#">Sign Up</a></li>
+      <button>Log in</button>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  header {
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 40.5px;
+    margin-bottom: 40.5px;
+    justify-content: center;
+    align-items: center;
+    transition: margin 0.5s ease-in-out;
+  }
+
+  header nav ul {
+    display: flex;
+    margin-left: auto; /* Mantiene el nav pegado a la derecha */
+  }
+
+  .title {
+    font-family: "Poppins-Bold";
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px; /* Reducción del margen */
+    margin-top: 3px;
+    color: #2d2d2d;
+    flex-grow: 1; /* Permite que el título se expanda */
+    transition: margin 0.5s ease-in-out;
+  }
+
+  header nav ul li {
+    list-style: none;
+    margin-right: 30px;
+    margin-top: 10px;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  header nav ul li a,
+  button {
+    font-family: "Poppins-Regular";
+  }
+
+  header nav ul li a {
+    text-decoration: none;
+    color: #2d2d2d;
+    font-size: 18px;
+    transition:
+      color 0.3s ease-in-out,
+      font-size 0.3s ease-in-out;
+  }
+
+  button {
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-radius: 10px;
+    background-color: #3366ff;
+    cursor: pointer;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  header nav ul li a:hover {
+    color: #3366ff;
+    font-size: 19px;
+  }
+
+  @media (max-width: 1024px) {
+    header {
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+
+    .title {
+      margin-right: 0;
+    }
+
+    header nav ul li {
+      margin-right: 15px;
+    }
+  }
+
+  @media (max-width: 786px) {
+    header {
+      margin-right: 20px;
+      margin-left: 20px;
+      margin-top: 30.5px;
+      margin-bottom: 30.5px;
+      justify-content: flex-start;
+    }
+
+    .title {
+      margin-right: 0;
+    }
+
+    header nav ul li,
+    header nav ul button {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+</style>
